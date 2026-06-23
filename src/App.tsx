@@ -27,10 +27,10 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 
 // Import custom generated images
-const heroBg = '/src/assets/images/cabinet_hero_bg_1782242762245.jpg';
-const clinicImg = '/src/assets/images/gabriel_clinic_1782242774299.jpg';
-const therapyImg = '/src/assets/images/gabriel_therapy_1782242793489.jpg';
-const portraitImg = '/src/assets/images/gabriel_portrait_1782244743603.jpg';
+import heroBg from './assets/images/cabinet_hero_bg_1782242762245.jpg';
+import clinicImg from './assets/images/gabriel_clinic_1782242774299.jpg';
+import therapyImg from './assets/images/gabriel_therapy_1782242793489.jpg';
+import portraitImg from './assets/images/gabriel_portrait_1782244743603.jpg';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -419,7 +419,6 @@ export default function App() {
             src={heroBg} 
             alt="Cabinet Masaj Ploiesti Ambient" 
             className="w-full h-full object-cover object-center scale-105 filter blur-[2px]"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-[#faf9f6]/40" />
         </div>
@@ -506,7 +505,6 @@ export default function App() {
                     src={portraitImg} 
                     alt="Gabriel Nia - Specialist Recuperare si Osteopatie Ploiesti" 
                     className="w-full h-auto object-cover"
-                    referrerPolicy="no-referrer"
                   />
                   
                   {/* Subtle info pill on the portrait image */}
@@ -570,7 +568,6 @@ export default function App() {
                   src={clinicImg} 
                   alt="Gabriel Nia Cabinet Masaj Ploiesti" 
                   className="w-full h-auto object-cover max-h-[450px]"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             </div>
@@ -679,7 +676,6 @@ export default function App() {
                   src={therapyImg} 
                   alt="Terapie manuala Ploiesti" 
                   className="w-full h-full object-cover scale-105"
-                  referrerPolicy="no-referrer"
                 />
               </div>
 
@@ -711,7 +707,6 @@ export default function App() {
                   src={portraitImg} 
                   alt="Gabriel Nia - Specialist Recuperare si Osteopatie Ploiesti" 
                   className="w-full h-auto object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             </div>
